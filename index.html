@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compression</title>
+</head>
+<body>
+    <h1>Upload a File for Compression or Decompression</h1>
+    <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">Select a file:</label>
+        <input type="file" id="file" name="file" required>
+        <br><br>
+        <label for="operation">Choose an operation:</label>
+        <br>
+        <input type="radio" id="compress" name="operation" value="compress" checked>
+        <label for="compress">Compress</label>
+        <br>
+        <input type="radio" id="decompress" name="operation" value="decompress">
+        <label for="decompress">Decompress</label>
+        <br><br>
+        <button type="submit">Upload and Process</button>
+    </form>
+</body>
+</html>
